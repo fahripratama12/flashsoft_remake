@@ -1,67 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Flashsoft Indonesia</title>
+    <link rel="icon" href="https://flashsoftindonesia.com/fs-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://flashsoftindonesia.com/fs-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://flashsoftindonesia.com/fs-logo.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://flashsoftindonesia.com/fs-logo.png">
+    <meta name="theme-color" content="#673499">
+
+    <style>
+         body {
+            background:#f2f3f6;
+        }
+
+        /* 🌐 Navbar */
+        nav {
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:15px 80px;
+            background-color:#673499;
+            backdrop-filter: blur(10px);
+            position:fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav img {
+            height:45px;
+        }
+
+        .nav-links {
+            display:flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color:white;
+            text-decoration:none;
+            font: size 20px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color:green;
+        }
+
+        .btn-nav {
+             background-color: #00e92b;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-nav:hover {
+            background-color: green;
+        }
+
+        /* 📱 Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
-<hr>
-    <header>
-        <h1>AYAM GORENG</h1>
-        <ul>
-            <li>NO hp</li>
-            <li>itulah </li>
-        </ul>
-    </header>
+<body>
 
-    <h2>list makanan and minuman</h2>
-    <ul>
-        <li>AYAM</li>
-        <li>es teh</li>
-    </ul>
-    <p>enak dimakan bg</p>
-    <a>a</a><a>a</a>
-    <span>a</span><span>a</span>
+    <!-- ✅ Navbar -->
+    <nav>
+        <img src="https://flashsoftindonesia.com/fs-logo-horizontal-white.png" alt="Flashsoft Indonesia Logo">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#benefit">Keunggulan Kami</a>
+            <a href="#pricing">Testimoni</a>
+            <a href="#program">Program</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <a href="#pricing" class="btn-nav">Login</a>
+    </nav>
 
-
-
-
-
-
-    
-    <h1>Fahri P</h1>
-    <p>lohasidhiahodhaodhadho</p>
-    <hr></hr>
-    <h2>Hobi</h2>
-    <ul>
-        <li>makan</li>
-        <li>makan</li>
-        <li>makan</li>
-    </ul>
-    <h2>Riwayat pendidikan</h2>
-    <ol>
-        <li>SD</li>
-        <li>SMP</li>
-        <li>AYAM</li>
-        
-    </ol>
-    <h2>Biodata</h2>
-    <table border="1">
-        <tr>
-            <th>Nama</th>
-            <th>Umur</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <td>FAhri p</td>
-            <td>20</td>
-            <td>tddh@gmail.com</td>
-        </tr>
-    </table>
 </body>
-
 
 </html>
